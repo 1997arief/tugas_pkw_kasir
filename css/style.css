@@ -1,0 +1,23 @@
+table{
+	width: 90%;
+	margin: 0 auto;
+	border: 1px solid #000;
+	border-collapse: collapse;
+}
+.table-border tr > th, .table-border tr > td{
+	border: 1px solid #000;
+}
+.bg-green{
+	background-color: #00DD00;
+}
+.input-control{
+	width: 98%;
+	margin: 0 auto;
+	background-color: #FFF;
+}
+.input-control:disabled{
+	background-color: #ddd;
+}
+.angka{
+	text-align: right;
+}

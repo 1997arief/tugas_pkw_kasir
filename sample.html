@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Untitled</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="author" href="humans.txt">
+    </head>
+    <body>
+        <form name="form1">
+        	<input type="text" name="inp[]"><br>
+        	<input type="text" name="inp[]"><br>
+        	<!-- <input type="text" name="inp[]"><br>
+        	<input type="text" name="inp[]"><br> -->
+        	<button onclick="getvalues();">Show</button>
+        </form>
+    <script type="text/javascript">
+    	function getvalues(){
+			var inps = document.getElementsByName('inp[]');
+			for (var i = 0; i <inps.length; i++) {
+				var inp=inps[i];
+			    alert("pname["+i+"].value="+inp.value);
+			}
+		}
+    </script>
+    </body>
+</html>
