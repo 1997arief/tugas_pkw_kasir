@@ -101,4 +101,5 @@ function init_input() {
 	click++;
 	// document.getElementById('expand').innerHTML += html;
 	newRow.innerHTML = html;
+	update_barang();
 }
