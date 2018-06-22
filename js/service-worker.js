@@ -1,4 +1,4 @@
-var CACHE_VERSION = 17;
+var CACHE_VERSION = 1;
 var dataCacheName = 'devRoot-v'+CACHE_VERSION;
 var cacheName = 'devRoot-v'+CACHE_VERSION;
 var PATH = '../';
