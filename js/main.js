@@ -109,11 +109,10 @@ function init_input() {
 	var tableRef = document.getElementById('myTable').getElementsByTagName('tbody')[0];
 	var newRow   = tableRef.insertRow(1 + click);
 		newRow.innerHTML = html;
-		input_barang[1+click].options[selected_option()].selected = true;
+	input_barang[1+click].options[selected_option()].selected = true;
 
 	click++;
 	update_barang();
-	// console.log("click : "+click+" barang: "+daftar_barang.length);
 	if ( click+1 === daftar_barang.length) {
 		tableRef.deleteRow(click+1);
 	}
@@ -160,11 +159,19 @@ function select_barang() {
 	}
 }
 function selected_option() {
-	selected=1;
+	selected=0;
 	if (arr_disable.length > 0) {
 		for (var i = daftar_barang.length - 1; i >= 0; i--) {
 			if ( !arr_disable.includes(i) ) {
 				selected = i;
+			}
+		}
+	} else {
+		var input_barang = document.getElementsByName('daftar_barang[]');
+		for (var i = 0; i <daftar_barang.length; i++) {
+			if ( input_barang[0].value==daftar_barang[i].code ) {
+				arr_disable.push(i);
+				selected_option();
 			}
 		}
 	}
