@@ -171,7 +171,7 @@ function selected_option() {
 		for (var i = 0; i <daftar_barang.length; i++) {
 			if ( input_barang[0].value==daftar_barang[i].code ) {
 				arr_disable.push(i);
-				selected_option();
+				selected = selected_option();
 			}
 		}
 	}
