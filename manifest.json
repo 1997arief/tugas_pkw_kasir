@@ -1,0 +1,15 @@
+{
+  "short_name": "Kasir Warung",
+  "name": "Kasir Warung Apps",
+  "icons": [
+    {
+      "src": "images/icon.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    }
+  ],
+  "start_url": "",
+  "background_color" : "#FFFFFF",
+  "display": "standalone",
+  "theme_color": "#FFFFFF"
+}

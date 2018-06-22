@@ -4,9 +4,11 @@
         <meta charset="utf-8">
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image/png" href="images/icon.png" sizes="32x32">
         <title>Kasir Warung</title>
         <link rel="stylesheet" href="css/style.css?_=1">
         <link rel="author" href="humans.txt">
+        <link rel="manifest" href="manifest.json">
     </head>
     <body>
     	<form name="form1">
@@ -50,7 +52,15 @@
 	        	</tbody>
 	        </table>
         </form>
-        <div id="output_test"></div>
         <script src="js/main.js?_=1"></script>
+		<script type="text/javascript">
+			( function() {
+				if ( 'serviceWorker' in navigator ) {
+					navigator.serviceWorker.register( 'js/service-worker.js' ).then( function() {
+						console.log( 'Service Worker Registered' );
+					} );
+				}
+			} )();
+		</script>
     </body>
 </html>
