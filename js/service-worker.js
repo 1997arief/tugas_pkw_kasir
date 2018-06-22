@@ -3,6 +3,7 @@ var dataCacheName = 'devRoot-v'+CACHE_VERSION;
 var cacheName = 'devRoot-v'+CACHE_VERSION;
 var PATH = '../';
 var filesToCache = [
+   PATH + '',
    PATH + 'index.html',
    PATH + 'js/main.js',
    PATH + 'css/style.css',
