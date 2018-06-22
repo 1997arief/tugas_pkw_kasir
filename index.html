@@ -5,7 +5,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Kasir Warung</title>
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style.css?_=1">
         <link rel="author" href="humans.txt">
     </head>
     <body>
@@ -28,7 +28,9 @@
 		        		</td>
 		        		<td><input class="input-control angka" type="text" disabled name="harga[]"></td>
 		        		<td><input class="input-control angka" type="text" name="jumlah[]" value="1" onkeyup="update_barang();"></td>
-		        		<td><input class="input-control angka" type="text" disabled name="total[]" value="0"></td>
+		        		<td>
+		        			<input class="input-control angka" type="text" disabled name="total[]" value="0">
+		        		</td>
 		        	</tr>
 		        	<tr>
 		        		<td colspan="4"><center><input type="button" value="+ Tambah barang" onclick="init_input();"></center></td>

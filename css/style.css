@@ -21,3 +21,15 @@ table{
 .angka{
 	text-align: right;
 }
+.input-with-hapus{
+	width: calc(98% - 27px) !important;
+	width: -moz-calc(98% - 27px) !important;
+	width: -webkit-calc(98% - 27px) !important;
+	width: -o-calc(98% - 27px) !important;
+}
+.tombol_hapus{
+	position: relative;
+	background: #DD1111;
+	color: #FFF;
+	border: none;
+}
