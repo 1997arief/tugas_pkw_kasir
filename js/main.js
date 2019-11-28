@@ -177,3 +177,21 @@ function selected_option() {
 	}
 	return selected;
 }
+
+// offline
+window.addEventListener('load', function() {
+	function updateOnlineStatus(event) {
+		var condition = navigator.onLine ? "hide" : "show";
+		// alert_offline.className = condition;
+	}
+
+	window.addEventListener('online',  updateOnlineStatus);
+	window.addEventListener('offline', updateOnlineStatus);
+});
+
+
+function show_alrt(){
+	var notification = new Notification("Hi there!", {body: "some text"});
+	setTimeout(function() {notification.close()}, 1000);
+	console.log(notification);
+}
