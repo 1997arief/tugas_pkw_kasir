@@ -1,3 +1,6 @@
+body{
+  font-family: sans-serif;
+}
 table{
 	width: 90%;
 	margin: 0 auto;
@@ -9,6 +12,13 @@ table{
 }
 .bg-green{
 	background-color: #00DD00;
+}
+thead tr {
+  background-color: #02a9f4;
+  color: #FFF;
+}
+tr td {
+  padding: 2px 5px;
 }
 .input-control{
 	width: 98%;
@@ -22,16 +32,29 @@ table{
 	text-align: right;
 }
 .input-with-hapus{
-	width: calc(98% - 27px) !important;
-	width: -moz-calc(98% - 27px) !important;
-	width: -webkit-calc(98% - 27px) !important;
-	width: -o-calc(98% - 27px) !important;
+	width: calc(90% - 27px) !important;
+	width: -moz-calc(90% - 27px) !important;
+	width: -webkit-calc(90% - 27px) !important;
+	width: -o-calc(90% - 27px) !important;
 }
 .tombol_hapus{
 	position: relative;
 	background: #DD1111;
 	color: #FFF;
 	border: none;
+  right: 0;
+}
+
+input[type="button"]{
+  padding: 6px 12px;
+  border: none;
+  font-weight: bold;
+  margin: 3px; 
+  display: inline;
+}
+.btn-primary{
+  background-color: #02a9f4;
+  color: #FFF;
 }
 
 /* The Modal (background) */
