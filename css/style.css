@@ -52,6 +52,16 @@ input[type="button"]{
   margin: 3px; 
   display: inline;
 }
+
+input[disabled]{
+  border: 1px solid #aaa;
+}
+
+input[type="text"], input[type="number"]{
+  padding: 2px 3px;
+  max-width: 94%;
+}
+
 .btn-primary{
   background-color: #02a9f4;
   color: #FFF;
